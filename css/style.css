@@ -52,6 +52,14 @@ img{
     width: 100%;
 }
 
+.row{
+    display: flex;
+}
+
+
+/*               HEADER                */
+
+/*               NAV                */
 header .nav_top{
     background-color: var(--color-secundario);
     padding: 20px 0;
@@ -79,37 +87,6 @@ header .nav_top .row div{
 header .nav_top i{
     color: var(--color-principal);
 }
-
-.row{
-    display: flex;
-}
-
-header .hamburguesa{
-    cursor: pointer;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-header .logo{
-    width: 47%;
-    padding: 0 10px;
-    
-}
-
-header .logo img{
-    max-width: 110px;
-}
-
-header .hamburguesa div{
-    width: 20px;
-    border-top: 2px solid grey;
-    margin: 4px 0px;
-
-}
-
-
 
 header nav{
     padding: 20px 0;
@@ -163,14 +140,45 @@ header nav ul li:hover{
 
 }
 
-main .hero img{
-    position: relative;
-    transition: 1s;
+/*      HAMBURGESA      */
+
+header .hamburguesa{
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-main .hero img:hover{
-    transition: 1s;
+header .hamburguesa div{
+    width: 20px;
+    border-top: 2px solid grey;
+    margin: 4px 0px;
+
 }
+
+/*      DROPDOWN MENU   */
+
+nav:hover ul{
+    display: block;
+}
+
+header nav ul{ 
+    display:none;
+}
+
+/*      LOGO          */
+
+header .logo{
+    width: 47%;
+    padding: 0 10px;
+    
+}
+
+header .logo img{
+    max-width: 110px;
+}
+
 
 footer{
     background-color: var(--color-secundario);
@@ -188,6 +196,16 @@ footer a:hover{
     text-decoration: none;
 }
 
+/*      HERO     */
+
+main .hero img{
+    position: relative;
+    transition: 1s;
+}
+
+main .hero img:hover{
+    transition: 1s;
+}
 
 .hero{
     background-image: url('../images/fondo.jpg');
@@ -261,6 +279,8 @@ footer a:hover{
 .hero .social a{
     color: white;
 }
+
+/*      MAIN SECTION    */
 
 main section{
     padding: 2.125em 0;
@@ -354,12 +374,13 @@ main section .row .columna .marco{
     transition: 1s;
 }
 
-main section .row .columna .marco img{
+main section .marco img{
     transform: rotateZ(-10deg);
+    transition: 1s;
 }
 
 main section .columna:hover .marco,
-main section .columna:hover .marco img
+main section .columna:hover img
 {
      transform: rotateZ(0deg); 
 }
@@ -388,7 +409,23 @@ main section article .post div p{
     height: 40px;
 }
 
-/* RESPONSIVE */
+main section .article-post h4{
+ 
+        color: var(--color-principal);
+        margin-bottom: 1em;
+        font-size: 0.8em;
+}
+
+main section .article-post a, main section .article-post p{
+    font-size: 0.8em;
+}
+
+main section .article-post>p{
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
+/* TABLET MEDIA QUERY */    
 
 @media (min-width: 48.00em){
   
@@ -421,6 +458,9 @@ main section article .post div p{
     }
 
 }
+
+
+/* DESKTOP MEDIA QUERY */
 
 @media (min-width: 62.750em){
 
@@ -461,5 +501,9 @@ main section article .post div p{
     main section .row .columna{
         width: 50%;
         
+    }
+
+    main section#blog .article-post{
+        border-left: 0px;
     }
 }
