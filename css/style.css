@@ -365,6 +365,28 @@ main section .columna:hover .marco img
 }
 
 
+/* MAIN SECTION BLOG */
+
+main section article .post{
+    position: relative;
+}
+main section article .post div{
+    background-color: #fa573aa6;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+}
+
+main section article .post div p{
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    color: white;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
 
 /* RESPONSIVE */
 
