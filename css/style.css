@@ -336,7 +336,7 @@ main section .row article{
     border-bottom: 1px solid #aaa;
 }
 
-main section article div i{
+main section#ourservices article div i{
     color: var(--color-principal);
     font-size: 2em;
     padding: 0.8rem;
@@ -645,6 +645,56 @@ footer div{
     main section#blog .article-post{
         border-left: 0px;
     }
+
+    /*      SECTION MENU      */
+
+    main section#menu div>div{
+        display: flex;
+    }
+
+    main section#menu .col-3{
+        width: 29%;
+        display: flex;
+    flex-direction: column;
+    }
+    main section#menu .col-7{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section#menu article {
+        display: flex;
+        
+    }
+    
+    main section#menu article figure{
+        width: 25%;
+
+    }
+    
+    main section#menu article figure img{
+        width: 80%;
+        padding: 1em 0;
+    }
+    
+    main section#menu article>div{
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    main section#menu .arrow_top{
+        display: none;
+    }
+
+    main section#menu h3{
+        font-size: 1em;
+        width: 100%;
+    }
+
+    
+
+    /*      FOOTER      */
 
     footer div{
         text-align: left;
