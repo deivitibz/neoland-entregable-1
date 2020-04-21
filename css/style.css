@@ -441,6 +441,106 @@ main section .article-post>p{
 }
 
 
+/*      SECTION MENU    */
+
+main section#menu {
+    background-color: var(--color-secundario);
+}
+
+main section#menu>div{
+    width: 80%;
+}
+
+main section#menu nav{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+main section#menu nav ul{
+    width: 100%;
+}
+
+main section#menu nav ul li{
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    width: 100%;
+}
+
+main section#menu nav ul li a{
+    
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+main section#menu nav ul li:hover{
+    background-color: var(--color-principal);
+    border-radius: 5px;
+}
+
+/* .active_link{
+    background-color: var(--color-principal);
+    border-radius: 5px;
+}
+ */
+main section#menu{
+    color:white;
+}
+
+main section#menu h2{
+    color:white;
+}
+
+main section#menu aside hr{
+    border-color: var(--color-principal);
+    width: 2.2em;
+    margin: 0.5em 0;
+}
+
+main section#menu h3{
+    font-size: 0.75em;
+    font-weight: 700;
+}
+
+main section#menu span{
+    color: var(--color-principal);
+    padding: 0 0.8em;
+}
+
+
+main section#menu p{
+    font-size: 0.62em;
+}
+
+
+
+
+
+/*      TOP ARROW    */
+
+main section#menu .col-7{
+    position: relative;
+}
+
+
+main section#menu .arrow_top{
+   position: absolute;
+   right: 0;
+   ;
+}
+
+main section#menu .arrow_top a{
+    color: white;
+    display: block;
+    padding: 15px;
+    position: sticky;
+    bottom: 0em;
+    background-color: var(--color-principal);
+}
+
 
 /*      FOOTER      */
 
